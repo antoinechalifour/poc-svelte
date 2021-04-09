@@ -15,6 +15,10 @@
 	export let pokemon: Pokemon;
 </script>
 
+<svelte:head>
+	<title>#{pokemon.id} {pokemon.name}</title>
+</svelte:head>
+
 <main style="--color-pokemon: var(--color-{pokemon.types[0].name.toLowerCase()});">
 	<img src={pokemon.picture} alt={pokemon.name}>
 	<h1>#{pokemon.id} {pokemon.name}</h1>
