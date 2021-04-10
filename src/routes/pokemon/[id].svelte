@@ -29,7 +29,7 @@
 		<div>
 			<img in:scale out:scale src={pokemon.picture} alt={pokemon.name}>
 			<h1 in:blur out:blur>#{pokemon.id} {pokemon.name}</h1>
-			<a href='/pokemon'>Give me another pokemon</a>
+			<a href='/'>Give me another pokemon</a>
 		</div>
 	{/key}
 </main>
