@@ -51,7 +51,7 @@ export const PokeApi = (fetch: Fetch) => {
 			return {
 				id: pokemonResponse.id.toString(),
 				name: species.names.find(x => x.language.name === 'en')!.name,
-				picture: `/static/img/${pokemonResponse.id.toString().padStart(3, "0")}.png`,
+				picture: `/img/${pokemonResponse.id.toString().padStart(3, "0")}.png`,
 				types: types.map(type => ({
 					name: type.names.find(x => x.language.name === 'en')!.name,
 					color: 'red'
